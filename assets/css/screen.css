@@ -1,3 +1,276 @@
 /* Novecento Wide DemiBold */
-.inline-block{display:inline-block;*display:inline;zoom:1}.cf{zoom:1}.cf:before,.cf:after{content:"";display:table}.cf:after{clear:both}.container{padding:0 10px}.border-box{-moz-box-sizing:border-box;-webkit-box-sizing:border-box}@font-face{font-family:'Novecento Wide';src:url('../fonts/Novecentowide-DemiBold-webfont.eot');src:url('../fonts/Novecentowide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Novecentowide-DemiBold-webfont.woff') format('woff'),url('../fonts/Novecentowide-DemiBold-webfont.ttf') format('truetype'),url('../fonts/Novecentowide-DemiBold-webfont.svg#NovecentowideLightBold') format('svg');font-weight:600;font-style:normal}*{margin:0;padding:0}body,button,input,select,textarea{font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:100%;color:#545454}.huge{font-size:3.75em;line-height:1.2em;margin-bottom:0}.big,h1{font-size:2.25em;line-height:1.3333333333333333em;margin-bottom:0}.medium,h2{font-size:1.5em;line-height:1.5em;margin-bottom:0}.base,h3{font-size:.875em;line-height:1.7142857142857142em;margin-bottom:.8571428571428571em}h3{margin-bottom:0}p,ul,pre,table{font-size:.875em;line-height:1.7142857142857142em;margin-bottom:.8571428571428571em;padding:0}h1,h2,h3{text-transform:uppercase;font-family:'Novecento Wide',Helvetica,Arial,sans-serif;font-weight:600}code{font-family:Monaco,Consolas,'Courier New',monospace}ul,ol{list-style-position:inside}.js .nav-main{display:none}body{background-color:#fff;color:#545454}img{max-width:100%;display:block}a{text-decoration:none;transition:color .25s;-webkit-transition:color .25s}a:link{color:#397b91}a:active,a:visited{color:#2b5c6c}a:hover,a:focus{color:#479ab6}#access{position:absolute;top:-24px}.branding{font-size:1.5em;line-height:1.5em;margin-bottom:0;text-transform:uppercase;font-weight:600;font-family:'Novecento Wide',Helvetica,Arial,sans-serif}.branding a{color:#545454}.header-main{position:relative;background-color:#3b3b3b;color:#fff}.header-main a{color:#fff}.header-main.fixed{position:fixed;top:0;width:100%}.header-main .header-inner{width:93.75%;margin:0 auto}.nav-main ul{list-style:none;margin:0}.menu-link{position:absolute;top:0;right:6.25%}.post-meta,.post-single-meta{list-style:none;margin:0;font-weight:600}.post-meta li,.post-single-meta li{display:inline-block}.post-meta li:after,.post-single-meta li:after{content:' \2022'}.post-meta li:last-child:after,.post-single-meta li:last-child:after{content:''}.post-single-meta{border-bottom:solid 1px #e0e0e0;border-top:solid 1px #e0e0e0;margin-bottom:.7142857142857143em}.excerpt{border-bottom:solid 1px #e0e0e0;border-top:solid 1px #e0e0e0;margin-bottom:1.5714285714285714em;padding:.8571428571428571em 0}.content-main{width:93.75%;margin:0 0 0 3.125%;max-width:600px}.footer-main{width:93.75%;margin:0 auto}@media only screen and (min-width: 600px){h1{ font-size:3.75em;line-height:1.2em;margin-bottom:0}h2,.branding{font-size:2.25em;line-height:1.3333333333333333em;margin-bottom:0}h3{font-size:1.5em;line-height:1.5em;margin-bottom:0}}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+/* Light Blog for Pico
+ * Author: John Cheesman
+ * v0.0
+*/
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.cf {
+  /* For modern browsers */
+
+  zoom: 1 /* For IE 6/7 (trigger hasLayout) */
+;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.container {
+  padding: 0 10px;
+}
+.border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2013 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Synthview Type Design
+ * License URL: http://www.fontspring.com/fflicense/synthview
+ *
+ *
+ */
+/* Novecento Wide DemiBold */
+@font-face {
+  font-family: 'Novecento Wide';
+  src: url('../fonts/Novecentowide-DemiBold-webfont.eot');
+  src: url('../fonts/Novecentowide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Novecentowide-DemiBold-webfont.woff') format('woff'), url('../fonts/Novecentowide-DemiBold-webfont.ttf') format('truetype'), url('../fonts/Novecentowide-DemiBold-webfont.svg#NovecentowideLightBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: #545454;
+}
+.huge {
+  font-size: 3.75em;
+  line-height: 1.2em;
+  margin-bottom: 0;
+}
+.big,
+h1 {
+  font-size: 2.25em;
+  line-height: 1.3333333333333333em;
+  margin-bottom: 0;
+}
+.medium,
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+.base,
+h3 {
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  margin-bottom: 0.8571428571428571em;
+}
+h3 {
+  margin-bottom: 0;
+}
+p,
+ul,
+pre,
+table {
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  margin-bottom: 0.8571428571428571em;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: 'Novecento Wide', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+code {
+  font-family: Monaco, Consolas, 'Courier New', monospace;
+}
+ul,
+ol {
+  list-style-position: inside;
+}
+/* HIDDEN ON LOAD */
+.js .nav-main {
+  display: none;
+}
+/* DEFAULT MOBILE STYLE */
+body {
+  background-color: #ffffff;
+  color: #545454;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  transition: color 0.25s;
+  -webkit-transition: color 0.25s;
+}
+a:link {
+  color: #397b91;
+}
+a:active,
+a:visited {
+  color: #2b5c6c;
+}
+a:hover,
+a:focus {
+  color: #479ab6;
+}
+#access {
+  position: absolute;
+  top: -24px;
+}
+.branding {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Novecento Wide', Helvetica, Arial, sans-serif;
+}
+.branding a {
+  color: #545454;
+}
+.site-header {
+  position: relative;
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+.site-header a {
+  color: #ffffff;
+}
+.site-header .header-inner {
+  width: 93.75%;
+  margin: 0 auto;
+}
+.nav-main ul {
+  list-style: none;
+  margin: 0;
+}
+.menu-link {
+  position: absolute;
+  top: 0;
+  right: 6.25%;
+}
+.post-meta,
+.post-single-meta {
+  list-style: none;
+  margin: 0;
+  font-weight: 600;
+}
+.post-meta li,
+.post-single-meta li {
+  display: inline-block;
+}
+.post-meta li:after,
+.post-single-meta li:after {
+  content: ' \2022';
+}
+.post-meta li:last-child:after,
+.post-single-meta li:last-child:after {
+  content: '';
+}
+.post-single-meta {
+  border-bottom: solid 1px #e0e0e0;
+  border-top: solid 1px #e0e0e0;
+  margin-bottom: 0.7142857142857143em;
+}
+.post-excerpt {
+  border-bottom: solid 1px #e0e0e0;
+  border-top: solid 1px #e0e0e0;
+  margin-bottom: 1.5714285714285714em;
+  padding: 0.8571428571428571em 0;
+}
+.post-excerpt P:last-child {
+  margin: 0;
+}
+.content {
+  width: 93.75%;
+  margin: 0 0 0 3.125%;
+  max-width: 600px;
+}
+.site-footer {
+  width: 93.75%;
+  margin: 0 auto;
+  font-size: 0.875em;
+  line-height: 1.7142857142857142em;
+  margin-bottom: 0.8571428571428571em;
+}
+.author {
+  background-position: 50% 50%;
+  border-top-left-radius: 51px;
+  position: relative;
+  padding: 10px;
+}
+.author img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.author .author-inner {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top-left-radius: 51px;
+  padding: 10px 10px 10px 110px;
+}
+.author .author-inner p {
+  margin: 0;
+}
+@media only screen and (min-width: 480px) {
+  
+}
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 3.75em;
+    line-height: 1.2em;
+    margin-bottom: 0;
+  }
+  h2,
+  .branding {
+    font-size: 2.25em;
+    line-height: 1.3333333333333333em;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+  }
+}

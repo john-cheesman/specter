@@ -33,12 +33,14 @@
         <footer class="post-footer">
 
             {{#if author}}
-            <section class="author" style="background-image:url({{author.cover}})">
+            <section class="author" {{#if author.cover}}style="background-image: url({{author.cover}})"{{/if}}>
                 <img src="{{author.image}}" alt="{{author.name}}s cover image" />
-                <h4>{{author.name}}</h4>
-                <a href="mailto:{{author.email}}">{{author.email}}</a>
-                <a href="{{author.website}}">{{author.website}}</a>
-                <p>{{author.bio}}</p>
+                <div class="author-inner">
+                    <h4>{{author.name}}</h4>
+                    <a href="mailto:{{author.email}}">{{author.email}}</a>
+                    <a href="{{author.website}}">{{author.website}}</a>
+                    <p>{{author.bio}}</p>
+                </div>
             </section>
             {{/if}}
 

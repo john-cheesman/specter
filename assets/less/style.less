@@ -50,20 +50,13 @@ a {
     }
 }
 
-.header-main {
+.site-header {
     position: relative;
     background-color: darken(@greyMid, 10%);
     color: @bg;
 
     a {
         color: @bg;
-    }
-
-    &.fixed {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        //box-shadow: 4px 4px 4px rgba(0,0,0,0.18);
     }
 
     .header-inner {
@@ -109,14 +102,18 @@ a {
     margin-bottom: (10/14em);
 }
 
-.excerpt {
+.post-excerpt {
     border-bottom: solid 1px @greyLight;
     border-top: solid 1px @greyLight;
     margin-bottom: (22/14em);
     padding: (12/14em) 0;
+
+    P:last-child {
+        margin: 0;
+    }
 }
 
-.content-main {
+.content {
     width: (300/320)*100%;
     margin: 0 0 0 (10/320)*100%;
     max-width: 600px;
@@ -128,9 +125,35 @@ a {
     }
 }
 
-.footer-main {
+.site-footer {
     width: (300/320)*100%;
     margin: 0 auto;
+    .base;
+}
+
+.author {
+    background-position: 50% 50%;
+    border-top-left-radius: 51px;
+    position: relative;
+    padding: 10px;
+
+    img {
+        .square(100px);
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .author-inner {
+        background-color: rgba(255,255,255,0.8);
+        border-top-left-radius: 51px;
+        padding: 10px 10px 10px 110px;
+
+        p {
+            margin: 0;
+        }
+    }
 }
 
 // Touch Specific Styles (requires Modernizr)
