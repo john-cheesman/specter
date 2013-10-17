@@ -37,8 +37,9 @@
                 {{#if author.image}}<img src="{{author.image}}" alt="{{author.name}}s cover image" />{{/if}}
                 <div class="author-inner">
                     {{#if author.name}}<h4>{{author.name}}</h4>{{/if}}
-                    {{#if author.email}}<a href="mailto:{{author.email}}">{{author.email}}</a>{{/if}}
-                    {{#if author.website}}<a href="{{author.website}}">{{author.website}}</a>{{/if}}
+                    {{#if author.location}}<p>{{author.location}}</p>{{/if}}
+                    {{#if author.email}}<a href="mailto:{{author.email}}">e-mail</a>{{/if}}
+                    {{#if author.website}}<a href="{{author.website}}">website</a>{{/if}}
                     {{#if author.bio}}<p>{{author.bio}}</p>{{/if}}
                 </div>
             </section>
